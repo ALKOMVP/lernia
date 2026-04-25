@@ -1,0 +1,114 @@
+.card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  padding: 1.35rem 1.35rem 1.25rem;
+  background: linear-gradient(145deg, rgba(30, 45, 74, 0.95), rgba(18, 26, 46, 0.98));
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(500px 120px at 0% 0%, rgba(56, 189, 248, 0.12), transparent 55%);
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cardLink:hover {
+  text-decoration: none;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+
+.tag {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #bae6fd;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.difficulty {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.difficultyBase {
+  border-color: rgba(74, 222, 128, 0.35);
+  color: #bbf7d0;
+}
+
+.difficultyMid {
+  border-color: rgba(251, 191, 36, 0.35);
+  color: #fde68a;
+}
+
+.difficultyAdv {
+  border-color: rgba(251, 113, 133, 0.35);
+  color: #fecdd3;
+}
+
+.teaser {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.card:hover .arrow {
+  transform: translateX(4px);
+}

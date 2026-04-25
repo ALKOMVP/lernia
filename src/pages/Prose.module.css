@@ -1,0 +1,191 @@
+.article {
+  max-width: 760px;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.kicker {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.lead {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.overviewGrid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 1.1rem 0 0.2rem;
+}
+
+.overviewCard {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(18, 26, 46, 0.58);
+  padding: 0.85rem 0.95rem;
+}
+
+.overviewTitle {
+  margin: 0 0 0.45rem;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.compactList {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.compactList li {
+  margin-bottom: 0.35rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0 1.25rem;
+}
+
+.tab {
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.tabActive {
+  background: var(--accent-soft);
+  color: #e0f2fe;
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.panel {
+  animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sectionTitle {
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.p {
+  color: var(--text-secondary);
+  margin: 0 0 1rem;
+}
+
+.ul {
+  margin: 0 0 1rem 1.1rem;
+  color: var(--text-secondary);
+  padding: 0;
+}
+
+.li {
+  margin-bottom: 0.45rem;
+}
+
+.callout {
+  border-left: 4px solid var(--accent);
+  padding: 0.85rem 1rem;
+  margin: 1.25rem 0;
+  background: var(--accent-soft);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: #dbeafe;
+  font-size: 0.95rem;
+}
+
+.calloutWarn {
+  border-left-color: var(--accent-warm);
+  background: rgba(251, 191, 36, 0.1);
+  color: #fef3c7;
+}
+
+.demoWrap {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border-strong);
+  background: rgba(18, 26, 46, 0.6);
+}
+
+.demoTitle {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.labSteps {
+  margin: 0 0 0.9rem;
+  padding-left: 1.05rem;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.labSteps li {
+  margin-bottom: 0.25rem;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: var(--text-primary);
+}
+
+.practiceBox {
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  background: rgba(74, 222, 128, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 0.95rem;
+}

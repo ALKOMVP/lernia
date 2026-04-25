@@ -1,0 +1,165 @@
+.hero {
+  margin-bottom: 2.5rem;
+  padding: 0.25rem 0 1rem;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fef08a;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  max-width: 18ch;
+}
+
+.heroLead {
+  margin: 0;
+  max-width: 52ch;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.method {
+  margin: 0 0 2rem;
+  border: 1px solid var(--border-subtle);
+  background: rgba(18, 26, 46, 0.62);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.1rem;
+}
+
+.methodTitle {
+  margin: 0 0 0.55rem;
+  font-size: 1.05rem;
+}
+
+.methodList {
+  margin: 0 0 0.75rem;
+  padding-left: 1rem;
+  color: var(--text-secondary);
+}
+
+.methodList li {
+  margin-bottom: 0.35rem;
+}
+
+.methodSources {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.note {
+  margin-top: 2.5rem;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: rgba(26, 37, 64, 0.65);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.note strong {
+  color: var(--text-primary);
+}
+
+.evaluatorCta {
+  margin-top: 2rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(56, 189, 248, 0.08);
+  padding: 1rem 1.1rem;
+}
+
+.evaluatorTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.evaluatorLead {
+  margin: 0 0 0.7rem;
+  color: var(--text-secondary);
+}
+
+.evaluatorButton {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.2), rgba(56, 189, 248, 0.08));
+  color: #e0f2fe;
+  font-weight: 700;
+  padding: 0.55rem 1rem;
+  text-decoration: none;
+}
+
+.evaluatorButton:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+.knowledgeCta {
+  margin-top: 2rem;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(167, 139, 250, 0.16), rgba(56, 189, 248, 0.08));
+  padding: 1rem 1.1rem;
+}
+
+.knowledgeTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.knowledgeLead {
+  margin: 0 0 0.7rem;
+  color: var(--text-secondary);
+}
+
+.knowledgeButton {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(167, 139, 250, 0.5);
+  background: linear-gradient(180deg, rgba(167, 139, 250, 0.25), rgba(56, 189, 248, 0.12));
+  color: #ede9fe;
+  font-weight: 700;
+  padding: 0.55rem 1rem;
+  text-decoration: none;
+}
+
+.knowledgeButton:hover {
+  text-decoration: none;
+  border-color: rgba(251, 191, 36, 0.55);
+}

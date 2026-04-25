@@ -1,0 +1,78 @@
+.wrap {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.08), rgba(167, 139, 250, 0.08));
+  padding: 1.25rem 1.3rem;
+}
+
+.badge {
+  display: inline-flex;
+  font-size: 0.77rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fde68a;
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  border-radius: 999px;
+  padding: 0.26rem 0.65rem;
+}
+
+.title {
+  margin: 0.6rem 0 0.55rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  max-width: 16ch;
+}
+
+.lead {
+  margin: 0;
+  max-width: 58ch;
+  color: var(--text-secondary);
+}
+
+.bookCard {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(18, 26, 46, 0.62);
+  padding: 1.1rem 1.2rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.chapterTitle {
+  margin: 0 0 0.45rem;
+  font-size: 1.1rem;
+}
+
+.chapterLead {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.points {
+  margin: 0.6rem 0 0;
+  padding-left: 1rem;
+  color: var(--text-secondary);
+}
+
+.enterBtn {
+  justify-self: start;
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(167, 139, 250, 0.55);
+  background: linear-gradient(180deg, rgba(167, 139, 250, 0.22), rgba(56, 189, 248, 0.12));
+  color: #eef2ff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+}
+
+.enterBtn:hover {
+  text-decoration: none;
+  border-color: rgba(251, 191, 36, 0.65);
+}
